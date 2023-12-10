@@ -13,6 +13,5 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Login to GitHub Container Registry
         run: |
-          docker build . --tag ghcr.io/Karolis92/caddy-tls-mod:latest
-          docker run ghcr.io/Karolis92/caddy-tls-mod:latest
-          docker push ghcr.io/Karolis92/caddy-tls-mod:latest
+          docker build . --tag ghcr.io/karolis92/caddy-tls-mod:latest
+          docker push ghcr.io/karolis92/caddy-tls-mod:latest
